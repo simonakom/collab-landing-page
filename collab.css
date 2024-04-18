@@ -10,11 +10,13 @@ body {
     height: 30px;
     color: #FFF;
     text-align: center;
+    cursor: default;
 }
 .header-text {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 500;
     line-height: 25px;
+    padding-top: 2px;
 }
  span a {
     color: #FFF;
@@ -32,7 +34,7 @@ body {
     text-decoration: none;
     color: #2B0236;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 13px;
 }
 .navigation a:hover {
     text-decoration: underline;
@@ -40,12 +42,11 @@ body {
 .navigation button {
     color: #9A54BC;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 12px;
     background-color: #FFF;
     border-color: #9A54BC ;
     border-radius: 3px;
 } 
-
 /* Hamburger menu */
 .active {
     background-color: #ffffff;
@@ -100,26 +101,26 @@ body {
         display: block;
     }
 }
-
 /* 1 section */
 .first{
     overflow: hidden;
+    cursor: default;
 }
 .title-1 {
-color: #2B0236;
-font-size: 32px;
-font-weight: 500;
-overflow: hidden;
+    color: #2B0236;
+    font-size: 32px;
+    font-weight: 500;
+    overflow: hidden;
 }
 .btn_1 {
-background: #9A54BC;
-border: 1.482px solid  #9A54BC;
-border-radius: 2.964px;
-box-shadow: 0px 4.402px 8.804px 0px rgba(0, 0, 0, 0.10);
-color: var(--White, #FFF);
-font-size: 10.565px;
-font-weight: 700;
-max-width: 30%;
+    background: #9A54BC;
+    border: 1.482px solid  #9A54BC;
+    border-radius: 2.964px;
+    box-shadow: 0px 4.402px 8.804px 0px rgba(0, 0, 0, 0.10);
+    color: var(--White, #FFF);
+    font-size: 10.565px;
+    font-weight: 700;
+    max-width: 30%;
 }
 .btn_1:hover {
 background: #815d92;
@@ -138,7 +139,7 @@ background: #815d92;
     max-width: 135px;
     height: auto; 
 }
-.logo img{
+.logo img {
     max-width: 135px;
     height: auto; 
 }
@@ -154,17 +155,8 @@ background: #815d92;
     max-width: 30%;
     overflow: hidden;
 }
-.btn_2:hover{
+.btn_2:hover {
     background-color: #ddd;
-}
-@media only screen and (max-width: 768px) {
-    .title-1 {
-        font-size: 24px;
-    }
-    .btn_1,
-    .btn_2 {
-        font-size: 14px; 
-    }
 }
 @media only screen and (max-width: 1005px) {
     .image-container img {
@@ -206,7 +198,17 @@ background: #815d92;
         height: auto; 
     }
 }
-
+@media only screen and (max-width: 768px) {
+    .title-1 {
+        font-size: 24px;
+    }
+    .btn_1 {
+        font-size: 14px; 
+    }
+    .btn_2 {
+        display: none;
+    }
+}
 @media only screen and (max-width: 480px) {
     .image-container div {
         display: none;
@@ -215,10 +217,10 @@ background: #815d92;
         margin-bottom: 200px;
     }
 }
-
 /* 2 section */
 .second {
     overflow: hidden;
+    cursor: default;
 }
 .title-2 {
     color: #000;
@@ -234,8 +236,13 @@ background: #815d92;
     margin-left: 70px;
     margin-bottom: 30px;
     overflow: hidden;
+    cursor: pointer;
 }
-
+.brand-images img:hover {
+    background-color: #ddd6d665;
+    border-radius: 40px;
+    padding: 15px;
+}
 .brand-images{
     overflow: hidden;
 }
@@ -248,7 +255,6 @@ background: #815d92;
         overflow: hidden;
     }
 }
-
 /* 3 section */
 .third {
     margin: 0 10%;
@@ -256,6 +262,7 @@ background: #815d92;
     background-color: #fdf8ff;
     margin: 0;
     overflow: hidden;
+    cursor: default;
 }
 .title-3 {
     color: #000;
@@ -305,26 +312,30 @@ background: #815d92;
     padding: 40px 20px 40px 20px;
     margin-top: 15px;
     overflow: hidden;
+    cursor: default;
 }
-.phone{
-    width: 85%;
+.phone {
+    width: 75%;
     height: auto;
     align-items: end;
 }
-@media only screen and (max-width: 800px) {
-    .row {
-       display: flex;
-       flex-direction: column;
-    }
-    .phone{
+@media only screen and (max-width: 1305px) {
+    .third .row {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+    .third img{
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+    }
 }
-
 /* 4 section */
-.fourth{
+.fourth {
     overflow: hidden;
+    cursor: default;
 }
 .title-4 {
     color: #000;
@@ -339,6 +350,7 @@ background: #815d92;
     text-align: center;
     width: 80%; 
     margin: 0 auto; 
+    font-size: 18px;
 }
 .video-container {
     text-align: center; 
@@ -349,7 +361,6 @@ background: #815d92;
     width: 70%;
     min-height: 50%;
 }
-
 /* 5 section */
 .fifth {
     margin: 0 10%;
@@ -372,6 +383,7 @@ background: #815d92;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     margin-right: 30px; 
     padding-bottom: 20px;
+    cursor: pointer;
 }
 .fifth .d-flex > div p {
     margin: 5px 0; 
@@ -381,11 +393,11 @@ background: #815d92;
     width: 100%;
     height: auto;
 }
-.fifth .color{
+.fifth .color {
     color: #60267F;
     font-weight: 500;
 }
-.building-pictures > div:hover{
+.building-pictures > div:hover {
 background-color: #cbbed2;
 }
 @media screen and (max-width: 780px) {
@@ -399,10 +411,10 @@ background-color: #cbbed2;
         margin-bottom: 20px;
     }
 }
-
 /* 6 section */
-.sixth{
+.sixth {
     overflow: hidden;
+    cursor:default;
 }
 .title-6 {
     color: #000;
@@ -412,7 +424,7 @@ background-color: #cbbed2;
     margin-top: 40px;
     overflow: hidden;
 }
-.green img{
+.green img {
     width: 100%;
 }
 .discount {
@@ -424,12 +436,12 @@ background-color: #cbbed2;
     color: #2B0236;
     background-color: white;
     width: 100%;
-    height: 60px;
     font-size: 20px;
     font-weight: 700;
     border-radius: 7px;
     margin-bottom: 30px;
     margin-top: 20px;
+    padding: 10px;
 }
 .sixth ul {
     list-style: none; 
@@ -439,10 +451,10 @@ background-color: #cbbed2;
     margin-right: 0px; 
     vertical-align: middle; 
 }
-.basic:hover:hover{
+.basic:hover:hover {
     background-color: #56E6A5;
 }
-.essential:hover:hover{
+.essential:hover:hover {
     background-color: #56E6A5;
 }
 .sixth .d-flex {
@@ -463,13 +475,13 @@ background-color: #cbbed2;
         align-items: center;
     }
 }
-
 /* 7 section */
 .seventh {
     margin-top: 50px;
     background-color: #fdf8ff;
     padding-bottom: 50px;
     overflow: hidden;
+    cursor: default;
 }
 .stars img {
     margin-top: 60px;
@@ -479,9 +491,13 @@ background-color: #cbbed2;
     margin: 0 auto; 
     margin-top: 60px;
 }
-.arrow img:hover {
+.arrow img{
     width: 60px;
+}
+.arrow img:hover {
+    width: 63px;
     height: auto;
+    cursor: pointer;
 }
 @media (max-width: 990px) {
     .seventh .arrow {
@@ -497,11 +513,14 @@ background-color: #cbbed2;
     .stars img {
         margin-top: 30px;
     }
-}
-
+    .arrow img:hover {
+        width: 28px;
+    }
+} 
 /* 8 section */
-.eighth{
+.eighth {
     overflow: hidden;
+    cursor: default;
 }
 .title-8 {
     color: #000;
@@ -525,16 +544,13 @@ background-color: #cbbed2;
     overflow: hidden;
     max-width: 70%; 
 }
-
 .eighth button:hover {
     background: #815d92;
 }
-
 .line img {
     width: 100%;
     height: auto;
 }
-
 @media (max-width: 450px) {
     .eighth button {
         margin-bottom: 50px;
@@ -542,13 +558,13 @@ background-color: #cbbed2;
         width: 80%;/
     }
 }
-
 /* 9 section */
 .nineth {
     margin-top: 50px;
     background-color: #9A54BC;
     padding-bottom: 50px;
-    overflow: hidden;
+    overflow: hidden;    
+    cursor: default;
 }
 .title-9 {
     color: white;
@@ -557,12 +573,10 @@ background-color: #cbbed2;
     font-weight: 500;
     margin-top: 70px;
 }
-
-.nineth .buttons{
+.nineth .buttons {
     margin-top: 70px;
     margin-bottom: 90px;
 }
-
 .nineth .button {
     background-color: white;
     color: #9A54BC;
@@ -577,7 +591,7 @@ background-color: #cbbed2;
     color: white;
     font-size: 20px;
     font-weight: 600;
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 7px;
     padding: 6px 30px;
 }
@@ -594,11 +608,11 @@ background-color: #cbbed2;
         font-size: 30px;
     }
 }
-
 /* 10 section */
 .tenth {
     background-color: #fdf8ff;
     overflow: hidden;
+    cursor: default;
 }
 .title-10 {
     color: #000;
@@ -624,12 +638,12 @@ background-color: #cbbed2;
         margin-top: 20px;
     }
 }
-
 /* 11 section */
 .eleventh {
     overflow: hidden;
     margin-top: 60px;
     margin-left: 20px;
+    cursor: default;
 }
 .links img{
     width: 70% !important;
@@ -659,6 +673,7 @@ background-color: #cbbed2;
 }
 .eleventh .contact {
     gap: 50px;
+    cursor: pointer;
 }
 @media (max-width: 800px) {
     .eleventh ul li {
@@ -669,4 +684,8 @@ background-color: #cbbed2;
         flex-direction: column;
         gap: 10px;
     }
+    .row {
+        display: flex;
+        flex-direction: column;
+     }
 }
